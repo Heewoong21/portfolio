@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poiret+One&family=Single+Day&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans" sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  background: #ffffff;
+  color:rgb(0, 0, 0);
+}
+
+.sidebar{
+  z-index: 10;
+  position:fixed;
+  right:0;
+  top:0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(10deg, #6c9fff, #34f564);
+  display:flex;
+  align-items: center;
+}
+.sidebar nav ul {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  flex-direction:row;
+  display:flex;
+  gap: 30px;
+  align-items: center;
+}
+.sidebar nav ul li {
+  margin: 18px 0;
+}
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.2s;
+  font-weight: bold;
+}
+.sidebar nav ul li a:hover {
+  color: #3538fa;
+}
+.sidebar nav:has(a:hover) a:not(:hover) {
+  opacity: 0.5  ;
+}
+.button{
+  position: fixed;
+  font-size:15px;
+  background: aqua;
+  color: white;
+  font-weight: 500;
+  top:850px;
+  right: 100px;
+  z-index: 5;
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+.button a{
+  color:white;
+  text-decoration: none;
+}
+.button a:hover{
+  color: rgb(0, 0, 0);
+}
+.main{
+  position: relative;
+  max-width: 100%;
+  padding: 30px 40px;
+}
+#main_profile{
+  height: 100vh;
+  width: 100%;
+  border-bottom:#7c5bf5 1px solid;
+}
+#main_profile .profile_img{
+  width: 240px;
+  height: 240px;
+  border-radius:50%;
+  object-fit: cover;
+  margin-top: 150px;
+  border: 2px solid #fff;
+}
+#main_profile h1{
+  color: #666;
+  margin-bottom:4px;
+  font-size: 80px;
+}
+#main_profile h1 span{
+  color:#6c9fff;
+}
+#main_profile p{
+  font-size: 20px;
+  margin-bottom:30px;
+  color:#444;
+}
+#main_profile .info{
+  color: #9c9595;
+  font-weight: 500;
+  padding-top:20px;
+}
+#main_profile .info span{
+  color: #6c9fff;
+  font-weight: 1.2em;
+}
+#main_profile .social a{
+  color: #9c9595;
+  text-decoration: none;
+  font-size: 40px;
+  margin-right:30px;
+}
+.aboutme{
+  display:block;
+  color:#3538fa;
+  padding-top:30px;
+
+}
+.aboutme h2{
+  font-size:30px;
+  margin-top:20px;
+}
+.aboutme ul{
+  margin-top:10px;
+}
+.aboutme ul li{
+  font-size: 20px;
+  list-style: none;
+  color:#333;
+}
+#education {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  color: #9c9595;
+  border-bottom: 1px solid #7c5bf5;
+}
+
+#education h2 {
+  color: #333;
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+#education ul {
+  padding-left: 20px;
+}
+
+#education ul li .name{
+  font-size:30px;
+  color:#333;
+}
+
+#education ul li {
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#education .small {
+  font-size: 16px;
+  color: #6c9fff;
+}
+
+#education .date {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 15px;
+  color: #3538fa;
+}
+#experience{
+  width:100%;
+  height:100vh;
+  border-bottom:1px solid #7c5bf5;
+  padding-top: 100px;
+  color:#9c9595;
+  font-size: 23px;
+}
+#experience h2{
+  color:#333;
+  margin-bottom: 10px;
+  font-size:60px;
+}
+#experience h3{
+  color:#333;
+  font-size: 30px;
+}
+#experience .date{
+  font:18px/1 400;
+  color:#1594e3;
+  padding-top:10px;
+  font-size: 20px;
+}
+#experience ul{
+  list-style-type: square;
+  color:#444;
+  font-size: 25px;
+}
+#experience ul li.sub{
+  list-style: none;
+  text-indent: 3px;
+  font-size: 17px;
+  color:#9c9595
+}
+
+#certificates{
+  width:100%;
+  height:100vh;
+  border-bottom:#7c5bf5 1px solid;
+}
+#certificates h2{
+  color:#333;
+  font-size: 60px;
+  margin-bottom: 20px;
+  padding-top: 150px;
+}
+#certificates h3{
+  font-size:40px;
+  color:#333;
+  padding-top: 50px;
+}
+#certificates p{
+    width: 300px;
+    color: #1594e3;
+    padding-left: 1500px;
+    position: absolute;
+    text-align: right; 
+}
+#certificates ul li{
+  list-style-type: none;
+  padding-top: 50px;
+  color:#9c9595;
+}
+#skills{
+  width:100%;
+  height: 100vh;
+  border-bottom:#7c5bf5 1px solid;
+  padding-top:100px;
+  color:#9c9595;
+}
+#skills h2{
+  color:#333;
+  margin-bottom:30px;
+  font-size: 60px;
+}
+#skills .skills-list span {
+  display:inline-block;
+  background: #cdffe2;
+  color: #06da4d;
+  border-radius:5px;
+  padding: 20px 20px;
+  margin: 4px 15px 4px 0px;
+  font:20px bold;
+}
+#skills ul {
+  list-style-type: none;
+  padding-top: 20px;
+  font-size: 20px;
+}
+#skills ul li{
+  padding: 5px 0;
+}
+#skills ul li.main{
+  color: #333;
+}
+#skills ul li.sub{
+  text-indent: 10px;
+}
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
